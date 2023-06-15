@@ -3,21 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
-<body>
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+<body class="poppins scrollspy-example" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50" tabindex="0">
+  <header>
+    <div class="container">
+      <nav class="nav navbar fixed-top bg-light d-flex" id="navbar">
+        <div class="container">
+          <a href="#"class="navbar-brand">Logo</a>
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
+              </li>
+            </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="p-5" style="margin-top: 10em;margin-left: 10em;margin-bottom: 10em;">
+    <h1>We are Salt and George</h1>
+    <p>We are software developers! We can help you build a product , feature or website Look through some of our work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact us.</p>
+  </section>
+
+
+  
+  <section id="Portfolio" style="background-color: #e5e5e5;">
+    <div class="container">
+      <div class="card mb-3 p-3" style="max-width: 1156px; ">
+        <div class="row g-1">
+          <div class="col-4">
+            <img src="/assets/cards/Snapshoot Portfolio.svg" class="img-fluid rounded-start" alt="Tonic">
+          </div>
+
+          <div class="col-8">
+
+            <div class="card-body">
+
+              <div class="row g-5">
+                <h2 class="card-title">Tonic</h2>
+              </div>
+              <div class="row g-5">
+                <p class="card-text">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+              </div>
+              <div class="row g-5">
+                <ul class="list-group list-group-horizontal list-unstyled">
+                  <li class="list-group-item bg-primary">HTML</span>
+                  <li class="list-group-item bg-primary">CSS</span>
+                  <li class="list-group-item bg-primary">JavaScript</span>
+                </ul>
+                <a class="btn btn-outline-primary" href="#" role="button" style="max-width: 100px;">Link</a>
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
       </div>
+    </div>
+  </section>
+
+
+
+<section style="border-top-right-radius: 150px;margin-top: 30vm;" id="About">
+<div class="container">
+  <div class="row">
+
+    <div class="col col-3">
+
+      <div class="row">
+        <h3>About me</h3>
+      </div>
+
+      <div class="row">
+        <p>We are software developers! We can help you build a product , feature or website Look through some of our work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact us.</p>
+      </div>
+
+      <div class="row">
+        <h3>Let's connect</h3>
+      </div>
+
+      <div class="row">
+        <ul class="list-group list-group-horizontal">
+          <li class="list-group-item"> <a href="https://twitter.com/NoizeSalt"> <img src="/assets/icons/twitter.png" alt="Twitter"/> </a> </li>
+          <li class="list-group-item"> <a href="https://www.linkedin.com/in/santiago-ruido-a1404880/"> <img src="/assets/icons/Linkedin icon.png" alt="LinkedIn"/> </a> <li>
+          <li class="list-group-item"> <a href="https://medium.com/"> <img src="/assets/icons/medium.png" alt="Medium"/> </a> </li>
+          <li class="list-group-item"> <a href="https://github.com/Arch-Noize"> <img src="/assets/icons/github.png" alt="GitHub"/> </a> </li>
+          <li class="list-group-item"> <a href="https://www.angellist.com/"> <img src="/assets/icons/angellist.png" alt="Angellist"/> </a> </li>
+        </ul>
+      </div>
+
+      <div class="row g-1 p-5 ">
+        <button type="button" class="btn btn-outline-primary">Get my resume</button>
+      </div>
+
+    </div>
+    
+    <div class="col">
+
+      <div class="row">
+        <h3>Languages</h3>
+      </div>
+
+      <div class="row">
+        <ul class="list-group list-group-horizontal gap-3">
+          <li class="col list-group-item rounded-3 bg-transparent">HTML</li>
+          <li class="col list-group-item rounded-3 bg-transparent">CSS</li>
+          <li class="col list-group-item rounded-3 bg-transparent">JavaScript</li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section id="Contact" class="bg-primary" style="border-top-left-radius: 150px;">
+  <div class="container">
+    <form>
+      <div class="mb-3">
+        <label for="Name" class="form-label invisible">Name and Surname</label>
+        <input type="text" class="form-control" id="Name" placeholder="Name and Surname">
+      </div>
+      <div class="mb-3">
+        <label for="Email" class="form-label invisible">Email address</label>
+        <input type="email" class="form-control" id="Email" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="Comment" class="form-label invisible">Example textarea</label>
+        <textarea class="form-control" id="Comment" rows="6"placeholder="Enter your message here."></textarea>
+      </div>
+      <button type="submit" class="btn btn-outline-primary" style="background-color: lightblue;">Get in Touch</button>
+    </form>
+    </div>
+</section>
+
+
+
 
       <!-- JS BUNDLE -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
