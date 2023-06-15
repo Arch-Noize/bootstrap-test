@@ -9,29 +9,36 @@
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
-<body class="poppins">
+<body class="poppins" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
   <header>
-        <ul class="nav justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
+    <div class="container">
+      <nav class="nav navbar fixed-top bg-light d-flex">
+        <div class="container">
+          <a href="#"class="navbar-brand">Logo</a>
+            <ul class="nav">
+              <li class="nav-item"id=>
+                <a class="nav-link active" aria-current="page" href="#Portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
+              </li>
+            </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <section class="text-center">
+  <section class="p-5" style="margin-top: 10em;margin-left: 10em;margin-bottom: 10em;">
     <h1>We are Salt and George</h1>
     <p>We are software developers! We can help you build a product , feature or website Look through some of our work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact us.</p>
   </section>
 
 
 
-  <section>
+  <section id="Portfolio">
     <div class="card mb-3" style="max-width: 540px;">
       <div class="row g-0">
         <div class="col-md-4">
@@ -55,14 +62,14 @@
 
 
 
-<section>
+<section style="margin-top: 10em;margin-left: 10em;margin-bottom: 10em;">
 <div class="container border border-primary rounded-end">
   <div class="row">
 
-    <div class="col">
+    <div class="col col-3">
 
       <div class="row">
-        <h3>About me</h3>
+        <h3 id="About">About me</h3>
       </div>
 
       <div class="row">
@@ -75,11 +82,11 @@
 
       <div class="row">
         <ul class="list-group list-group-horizontal">
-          <li class="list-group-item"> <a href="https://twitter.com/NoizeSalt"> <img src="./assets/icons/twitter.png" alt="Twitter"/> </a> </li>
-          <li class="list-group-item"> <a href="https://www.linkedin.com/in/santiago-ruido-a1404880/"> <img src="./assets/icons/Linkedin icon.png" alt="LinkedIn"/> </a> <li>
-          <li class="list-group-item"> <a href="https://medium.com/"> <img src="./assets/icons/medium.png" alt="Medium"/> </a> </li>
-          <li class="list-group-item"> <a href="https://github.com/Arch-Noize"> <img src="./assets/icons/github.png" alt="GitHub"/> </a> </li>
-          <li class="list-group-item"> <a href="https://www.angellist.com/"> <img src="./assets/icons/angellist.png" alt="Angellist"/> </a> </li>
+          <li class="list-group-item"> <a href="https://twitter.com/NoizeSalt"> <img src="/assets/icons/twitter.png" alt="Twitter"/> </a> </li>
+          <li class="list-group-item"> <a href="https://www.linkedin.com/in/santiago-ruido-a1404880/"> <img src="/assets/icons/Linkedin icon.png" alt="LinkedIn"/> </a> <li>
+          <li class="list-group-item"> <a href="https://medium.com/"> <img src="/assets/icons/medium.png" alt="Medium"/> </a> </li>
+          <li class="list-group-item"> <a href="https://github.com/Arch-Noize"> <img src="/assets/icons/github.png" alt="GitHub"/> </a> </li>
+          <li class="list-group-item"> <a href="https://www.angellist.com/"> <img src="/assets/icons/angellist.png" alt="Angellist"/> </a> </li>
         </ul>
       </div>
 
@@ -112,7 +119,7 @@
 </section>
 
 
-<section>
+<section id="Contact" style="margin-top: 10em;margin-left: 10em;margin-bottom: 10em;">
   <form>
   <div class="mb-3">
     <label for="Name" class="form-label invisible">Name and Surname</label>
