@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
-<body class="poppins" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+<body class="poppins scrollspy-example" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50" tabindex="0">
   <header>
     <div class="container">
-      <nav class="nav navbar fixed-top bg-light d-flex">
+      <nav class="nav navbar fixed-top bg-light d-flex" id="navbar">
         <div class="container">
           <a href="#"class="navbar-brand">Logo</a>
-            <ul class="nav">
-              <li class="nav-item"id=>
+            <ul class="nav nav-pills">
+              <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#Portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
@@ -62,7 +62,7 @@
                   <li class="list-group-item bg-primary">CSS</span>
                   <li class="list-group-item bg-primary">JavaScript</span>
                 </ul>
-                <a class="btn btn-primary" href="#" role="button" style="max-width: 100px;">Link</a>
+                <a class="btn btn-outline-primary" href="#" role="button" style="max-width: 100px;">Link</a>
               </div>
 
             </div>
@@ -76,14 +76,14 @@
 
 
 
-<section style="border-top-right-radius: 150px;">
+<section style="border-top-right-radius: 150px;margin-top: 30vm;" id="About">
 <div class="container">
   <div class="row">
 
     <div class="col col-3">
 
       <div class="row">
-        <h3 id="About">About me</h3>
+        <h3>About me</h3>
       </div>
 
       <div class="row">
@@ -145,7 +145,7 @@
         <label for="Comment" class="form-label invisible">Example textarea</label>
         <textarea class="form-control" id="Comment" rows="6"placeholder="Enter your message here."></textarea>
       </div>
-      <button type="submit" class="btn btn-primary">Get in Touch</button>
+      <button type="submit" class="btn btn-outline-primary" style="background-color: lightblue;">Get in Touch</button>
     </form>
     </div>
 </section>
